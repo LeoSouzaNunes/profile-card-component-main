@@ -1,0 +1,75 @@
+@use 'variables'
+@use 'mixins'
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    transition: .4s
+
+    font-family: 'Kumbh Sans', sans-serif
+
+li
+    list-style-type: none
+
+body
+    display: flex
+    justify-content: center
+    align-items: center
+
+    height: 100vh
+
+    background-color: variables.$Dark-cyan
+
+.card
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    overflow: hidden
+    position: relative
+
+    width: 350px
+    height: 372px
+
+    border-radius: 15px
+    box-shadow: 0px 5px 15px variables.$Very-dark-desaturated-blue
+    background-color: #FFFFFF
+
+    &-background-top
+        width: 100%
+        height: 38%
+        background-color: variables.$Dark-cyan
+
+    &-picture
+        position: absolute
+        top: 85px
+
+        width: 110px
+        height: 110px
+
+        background-image: url(../images/image-victor.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+
+        border-radius: 50%
+        border: 5px solid #FFFFFF
+
+    &-user
+        padding-top: 70px
+        padding-bottom: 30px
+        @include flex-column-center
+
+    &-line
+        width: 100%
+        height: 1px
+        background-color: variables.$Dark-gray
+
+    &-data
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+
+        padding: 25px 0px
+
+        width: 100%
