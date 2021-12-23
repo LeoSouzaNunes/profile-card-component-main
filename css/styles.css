@@ -20,9 +20,9 @@ body {
   align-items: center;
   height: 100vh;
   background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
-  background-size: 700px, 700px;
+  background-size: 1000px, 1000px;
   background-repeat: no-repeat, no-repeat;
-  background-position: left, right bottom;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
   background-color: #19a2ae;
 }
 
