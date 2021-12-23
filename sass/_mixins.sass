@@ -1,5 +1,17 @@
-@mixin flex-column-center
+@use 'variables'
+
+@mixin flex-column
     display: flex
     flex-direction: column
-    justify-content: center
     align-items: center
+    justify-content: center
+
+@mixin bold-font
+    font-size: 1.125rem
+    font-weight: 700
+    color: variables.$Very-dark-desaturated-blue
+
+@mixin normal-font
+    font-size: 1rem
+    font-weight: 400
+    color: variables.$Dark-gray
